@@ -9,6 +9,8 @@
         android:id="@+id/listViewMenu"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@drawable/list_selector"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btnOrder"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Khi item được nhấn giữ hoặc activated sẽ đổi nền -->
+    <item android:state_activated="true" android:drawable="@color/teal_200"/>
+    <item android:state_pressed="true"   android:drawable="@color/teal_200"/>
+    <!-- Mặc định trong suốt -->
+    <item android:drawable="@android:color/transparent"/>
+</selector>

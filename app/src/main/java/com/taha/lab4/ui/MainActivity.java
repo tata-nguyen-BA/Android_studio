@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView tvFood, tvDrink;
     private Button btnChooseFood, btnChooseDrink;
+    private Button btnClear;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -27,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
         tvDrink = findViewById(R.id.tvDrinkResult);
         btnChooseFood = findViewById(R.id.btnChooseFood);
         btnChooseDrink = findViewById(R.id.btnChooseDrink);
+        btnClear = findViewById(R.id.btnClear);
+        btnClear.setOnClickListener(v -> {
+            // reset lại text
+            tvFood.setText("Thức ăn: Chưa chọn");
+            tvDrink.setText("Đồ uống: Chưa chọn");
+        });
 
         btnChooseFood.setOnClickListener(v ->
                 startActivityForResult(

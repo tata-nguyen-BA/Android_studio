@@ -38,6 +38,15 @@ public abstract class BaseMenuActivity extends AppCompatActivity {
             selectedPos = pos;
         });
 
+        listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+
+        listView.setOnItemClickListener((parent, view, pos, id) -> {
+            selectedPos = pos;
+            // đánh dấu vào ListView, để selector phát huy tác dụng
+            listView.setItemChecked(pos, true);
+        });
+
+
         btnOrder.setOnClickListener(v -> {
             if (selectedPos < 0) {
                 Toast.makeText(this, "Chọn trước đã!", Toast.LENGTH_SHORT).show();
