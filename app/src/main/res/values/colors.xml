@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+        <color name="item_selected_color">#FFC107</color> <!-- Màu vàng khi được chọn -->
+        <color name="item_hover_color">#FFEB3B</color>  <!-- Màu vàng nhạt khi hover -->
+        <color name="item_default_color">#FFFFFF</color> <!-- Màu trắng mặc định -->
 </resources>

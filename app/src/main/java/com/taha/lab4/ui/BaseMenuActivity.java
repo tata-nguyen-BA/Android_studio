@@ -36,6 +36,7 @@ public abstract class BaseMenuActivity extends AppCompatActivity {
 
         listView.setOnItemClickListener((parent, view, pos, id) -> {
             selectedPos = pos;
+            listView.setItemChecked(pos, true);
         });
 
         listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);

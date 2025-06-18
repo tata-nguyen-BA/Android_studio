@@ -42,6 +42,8 @@ public class MenuAdapter extends ArrayAdapter<MenuItem> {
             tvName.setText(item.getName());
             tvDesc.setText(item.getDesc());
             tvPrice.setText(String.format("%,d ₫", item.getPrice()));
+            convertView.setActivated(position == selectedPos);
+
         }
 
         return convertView;

@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Trạng thái được chọn -->
+    <item android:state_activated="true" android:drawable="@color/item_selected_color" />
+    <!-- Trạng thái hover -->
+    <item android:state_pressed="true" android:drawable="@color/item_hover_color" />
+    <!-- Trạng thái mặc định -->
+    <item android:drawable="@color/item_default_color" />
+</selector>
