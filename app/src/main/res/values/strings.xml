@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Lab4</string>
+    <string name="btn_exit">Thoát</string>
+    <string name="btn_choose_food">Chọn thức ăn</string>
+    <string name="btn_choose_drink">Chọn đồ uống</string>
+    <string name="food_result_default">Thức ăn: Chưa chọn</string>
+    <string name="drink_result_default">Đồ uống: Chưa chọn</string>
+    <string name="btn_oder">Đặt món</string>
+    <string name="name_food">Tên món</string>
+    <string name="name_drink">Tên đồ uống</string>
+    <string name="desc">Mô tả ngắn</string>
+    <string name="price">Giá</string>
+    <string name="price_format">%,d ₫</string>
 </resources>

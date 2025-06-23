@@ -1,4 +1,3 @@
-// File: app/src/main/java/com/taha/lab4/adapters/MenuAdapter.java
 package com.taha.lab4.adapters;
 
 import android.content.Context;
@@ -9,21 +8,25 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import com.taha.lab4.R;
 import com.taha.lab4.models.MenuItem;
 
 import java.util.List;
+import java.util.Locale;
 
 public class MenuAdapter extends ArrayAdapter<MenuItem> {
     private final int resourceLayout;
-
     public MenuAdapter(Context context, int resource, List<MenuItem> items) {
         super(context, resource, items);
         this.resourceLayout = resource;
     }
 
+    @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         // Inflate if needed
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext())
@@ -41,9 +44,8 @@ public class MenuAdapter extends ArrayAdapter<MenuItem> {
             iv.setImageResource(item.getImageRes());
             tvName.setText(item.getName());
             tvDesc.setText(item.getDesc());
-            tvPrice.setText(String.format("%,d ₫", item.getPrice()));
-            convertView.setActivated(position == selectedPos);
-
+            tvPrice.setText(String.format(Locale.getDefault(), "%,d ₫", item.getPrice()));
+            iv.setContentDescription("Hình ảnh " + item.getName());
         }
 
         return convertView;

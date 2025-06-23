@@ -7,23 +7,26 @@
 
     <ListView
         android:id="@+id/listViewMenu"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="420dp"
+        android:layout_height="633dp"
         android:choiceMode="singleChoice"
         android:listSelector="@drawable/list_selector"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btnOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnOrder"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Đặt món"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/btn_oder"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
